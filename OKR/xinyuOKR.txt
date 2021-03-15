@@ -1,0 +1,4 @@
+Schedule and deliverable:
+	Implement basic player movement -- Sunday by 4pm (est: 1 hour)
+    Implement a third player follow up camera -- Sunday by 5pm (est: 1 hour)
+    Implement basic AI script, such as patrolling and chasing -- Monday by 6pm (est: 4 hour)
