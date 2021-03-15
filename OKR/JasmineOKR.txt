@@ -1,0 +1,5 @@
+Jasmine's Task: 
+All Due Tuesday by 5pm or ealier
+-Will begin terrian setup (1 hour)
+-Create placement ques for characters (1 hour)
+-Will highlight objects to be picked up and thrown by the character. (4 hours)
