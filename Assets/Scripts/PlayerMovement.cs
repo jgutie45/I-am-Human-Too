@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
-    public Animator anim;
+    private Animator anim;
 
     public float speed = 6f;
     public float turnSmoothTime = 0.1f;
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0F;
     private Vector3 moveDirection = Vector3.zero;
 
-    private void Awake(){
+    private void Start(){
         anim = GetComponent<Animator>();
     }
 
