@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     public Transform cam;
+    public Animator anim;
 
     public float speed = 6f;
     public float turnSmoothTime = 0.1f;
@@ -14,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
     private Vector3 moveDirection = Vector3.zero;
+
+    void Start(){
+        anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,6 +34,9 @@ public class PlayerMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            anim.SetBool("isWalking", true);
+        } else {
+            anim.SetBool("isWalking", false);
         }
 
         // https://answers.unity.com/questions/574328/jumping-with-a-character-controller.html
