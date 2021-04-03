@@ -34,9 +34,9 @@ public class PlayerMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
-            anim.SetTrigger("Walking");
+            anim.SetBool("isWalking", true);
         } else {
-            anim.SetTrigger("Idle");
+            anim.SetBool("isWalking", false);
         }
 
         // https://answers.unity.com/questions/574328/jumping-with-a-character-controller.html
