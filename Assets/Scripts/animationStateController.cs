@@ -14,11 +14,14 @@ public class animationStateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d")){
+        if(Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
             anim.SetBool("isWalking", true);
-        }
-        if(!(Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))){
+        else 
             anim.SetBool("isWalking", false);
-        }
+
+        if(Input.GetKey("space"))
+            anim.SetBool("isJumping", true);
+        else
+            anim.SetBool("isJumping", false);
     }
 }
