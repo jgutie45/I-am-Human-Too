@@ -73,7 +73,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 44c1f66c2b17f194a8511a053d0e9daa, type: 2}
+  m_Motion: {fileID: 7400000, guid: bb35b67a197e8944e9a30a920b4ff663, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -123,9 +123,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.13232855
-  m_TransitionOffset: 0.029310621
-  m_ExitTime: 0.03284089
+  m_TransitionDuration: 0.5760613
+  m_TransitionOffset: 0.013329675
+  m_ExitTime: 0.01761497
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -173,19 +173,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isRunning
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -322,9 +322,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.0645726
+  m_TransitionDuration: 0.6495027
   m_TransitionOffset: 0
-  m_ExitTime: 0.034748893
+  m_ExitTime: 0.005084896
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
