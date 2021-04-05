@@ -136,3 +136,26 @@ Received Import Request.
 Start importing Assets/Models/Zombie/Animation/Zombie Running.anim using Guid(806559257c91ebd45af242ffb12c7926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9064ec359c1c50d9573bc9fe7404f9fd') in 0.010649 seconds
   Import took 0.012761 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000551 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.613 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1257 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.2 MB.
+System memory in use after: 63.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1710.
+Total: 1.592400 ms (FindLiveObjects: 0.207700 ms CreateObjectMapping: 0.091300 ms MarkObjects: 1.277900 ms  DeleteObjects: 0.014500 ms)
+
