@@ -61,7 +61,6 @@ RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.874 seconds
 Platform modules already initialized, skipping
-========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
@@ -73,10 +72,10 @@ System memory in use after: 63.5 MB.
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1708.
 Total: 1.806200 ms (FindLiveObjects: 0.133700 ms CreateObjectMapping: 0.044000 ms MarkObjects: 1.559600 ms  DeleteObjects: 0.068100 ms)
 
-========================================================================
 Received Import Request.
   path: Assets/Audio/ZombieBreathing.wav
   artifactKey: Guid(6fee8805bf795984ea6bc4861e74eebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Audio/ZombieBreathing.wav using Guid(6fee8805bf795984ea6bc4861e74eebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ef97b70ba054752c36c6875f2f7f13') in 0.120228 seconds
   Import took 0.122306 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
