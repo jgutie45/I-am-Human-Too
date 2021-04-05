@@ -1,174 +1,197 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.867; Version 2009; 64bit' Language: 'en' Physical Memory: 16295 MB
+OS: 'Windows 10 Home; OS build 19042.906; Version 2009; 64bit' Language: 'en' Physical Memory: 16306 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\2020.2.3f1\Editor\Unity.exe
+D:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/grand/Desktop/School/UIC/4th Year/2nd Semester/CS 426/Group Project/I-am-Human-Too
+C:/Users/yasmi/Desktop/CS426IamHumanToo/I-am-Human-Too
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65368
-Successfully changed project path to: C:/Users/grand/Desktop/School/UIC/4th Year/2nd Semester/CS 426/Group Project/I-am-Human-Too
-C:/Users/grand/Desktop/School/UIC/4th Year/2nd Semester/CS 426/Group Project/I-am-Human-Too
+60233
+Successfully changed project path to: C:/Users/yasmi/Desktop/CS426IamHumanToo/I-am-Human-Too
+C:/Users/yasmi/Desktop/CS426IamHumanToo/I-am-Human-Too
 Using Asset Import Pipeline V2.
-Unable to join player connection multicast group.
-
-Unable to join player connection alternative multicast group.
-
-Refreshing native plugins compatible for Editor in 110.91 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
-[Subsystems] Discovering subsystems at path C:/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/grand/Desktop/School/UIC/4th Year/2nd Semester/CS 426/Group Project/I-am-Human-Too/Assets
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/yasmi/Desktop/CS426IamHumanToo/I-am-Human-Too/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 (ID=0x1c20)
     Vendor:   
-    VRAM:     2010 MB
-    Driver:   24.21.13.9901
+    VRAM:     6052 MB
+    Driver:   27.21.14.6589
 Initialize mono
-Mono path[0] = 'C:/2020.2.3f1/Editor/Data/Managed'
-Mono path[1] = 'C:/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Mono path[0] = 'D:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002441 seconds.
+Register platform support module: D:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007812 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.80 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 23.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.362 seconds
+- Completed reload, in  9.822 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000785 seconds.
+Registered in 0.003405 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.030 seconds
+- Completed reload, in  0.880 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1259 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.1 MB.
-System memory in use after: 62.2 MB.
+Unloading 1262 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 63.1 MB.
+System memory in use after: 63.2 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1701.
-Total: 2.567300 ms (FindLiveObjects: 0.193700 ms CreateObjectMapping: 0.059600 ms MarkObjects: 2.172000 ms  DeleteObjects: 0.140900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/NavMesh-NavMesh Surface.asset
-  artifactKey: Guid(2d9f1be4bbb87b44e8689479c997f6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NavMesh-NavMesh Surface.asset using Guid(2d9f1be4bbb87b44e8689479c997f6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50096407a469dcad8446e0c22ac7c864') in 0.113832 seconds
-  Import took 0.116625 seconds .
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1706.
+Total: 1.744900 ms (FindLiveObjects: 0.155200 ms CreateObjectMapping: 0.044900 ms MarkObjects: 1.475100 ms  DeleteObjects: 0.068200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.644469 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(830e350a3db54904b8efb75df488805d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(830e350a3db54904b8efb75df488805d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0881cd0c74356da93a65479dc4fb5ddd') in 0.005288 seconds
-  Import took 0.012114 seconds .
+  path: Assets/Models/Human 1
+  artifactKey: Guid(552d0c51d92a35e4aac5a91c745627fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Human 1 using Guid(552d0c51d92a35e4aac5a91c745627fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2daabba95efef60eb061d927f042e97f') in 0.041556 seconds
+  Import took 0.043563 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.190124 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(830e350a3db54904b8efb75df488805d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(830e350a3db54904b8efb75df488805d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0881cd0c74356da93a65479dc4fb5ddd') in 0.002401 seconds
-  Import took 0.004825 seconds .
+  Time since last request: 0.001059 seconds.
+  path: Assets/Models/Human 1/shae.fbx
+  artifactKey: Guid(b8521c0780c3b76438b74b06f83f9318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Human 1/shae.fbx using Guid(b8521c0780c3b76438b74b06f83f9318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33634e74b1ece974d87cc4497d08c0f9') in 1.577440 seconds
+  Import took 1.583412 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.111651 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(9510a9bcf2ad3fd4d8da5cc9b76af593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(9510a9bcf2ad3fd4d8da5cc9b76af593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfafdbba65ab134da4c555fc01599ff8') in 0.004776 seconds
-  Import took 0.007724 seconds .
+  Time since last request: 92.056857 seconds.
+  path: Assets/Models/Human 1/Bodymat.mat
+  artifactKey: Guid(3eec864383438e44f975dac6a1210689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Human 1/Bodymat.mat using Guid(3eec864383438e44f975dac6a1210689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d0fc50d41e73e2be40f0ba7d32d4af') in 0.026708 seconds
+  Import took 0.030191 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001164 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(9510a9bcf2ad3fd4d8da5cc9b76af593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(9510a9bcf2ad3fd4d8da5cc9b76af593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfafdbba65ab134da4c555fc01599ff8') in 0.002497 seconds
-  Import took 0.004805 seconds .
+  Time since last request: 99.572516 seconds.
+  path: Assets/Models/Human 3
+  artifactKey: Guid(d0c72de287bfe4645aa23be464b0bd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Human 3 using Guid(d0c72de287bfe4645aa23be464b0bd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b0640c60c135e0e9df9b0cce5d54a8') in 0.006306 seconds
+  Import took 0.011408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.572909 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873fa129db14836fb6e8efe7f570a110') in 0.003072 seconds
-  Import took 0.005599 seconds .
+  Time since last request: 0.158494 seconds.
+  path: Assets/Models/Human 3/Douglas.fbx
+  artifactKey: Guid(921ec46143fabe24d856eca4f8aa75ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Human 3/Douglas.fbx using Guid(921ec46143fabe24d856eca4f8aa75ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12b811d057aa1b61a9dd2ca32bd815a') in 0.286419 seconds
+  Import took 0.290453 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.480880 seconds.
-  path: Assets/NavMeshComponents
-  artifactKey: Guid(78dfdef7f258c844f9f96dee7ac3db00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NavMeshComponents using Guid(78dfdef7f258c844f9f96dee7ac3db00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f95b53a161976dc43b78496690507a') in 0.003947 seconds
-  Import took 0.006938 seconds .
+  Time since last request: 6.136809 seconds.
+  path: Assets/Models/Human 3/Bodymat.mat
+  artifactKey: Guid(c9fef748fbf95414991b03c85d5413a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Human 3/Bodymat.mat using Guid(c9fef748fbf95414991b03c85d5413a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30656fea61b656d4c3cf407e3163271d') in 0.019037 seconds
+  Import took 0.021272 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001020 seconds.
-  path: Assets/NavMeshComponents
-  artifactKey: Guid(78dfdef7f258c844f9f96dee7ac3db00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NavMeshComponents using Guid(78dfdef7f258c844f9f96dee7ac3db00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f95b53a161976dc43b78496690507a') in 0.002567 seconds
-  Import took 0.004948 seconds .
+  Time since last request: 88.744597 seconds.
+  path: Assets/Models/Human 2
+  artifactKey: Guid(f566f3983f0511446a6a9c721ff1a0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Human 2 using Guid(f566f3983f0511446a6a9c721ff1a0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38283bb7d65fb574017f750b284a36f9') in 0.006151 seconds
+  Import took 0.008308 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000828 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1256 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 77.7 MB.
+System memory in use after: 77.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1753.
+Total: 1.792400 ms (FindLiveObjects: 0.137500 ms CreateObjectMapping: 0.042900 ms MarkObjects: 1.585400 ms  DeleteObjects: 0.025700 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 52.7 MB.
+System memory in use after: 52.8 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1753.
+Total: 2.671000 ms (FindLiveObjects: 0.263600 ms CreateObjectMapping: 0.057600 ms MarkObjects: 2.316100 ms  DeleteObjects: 0.031900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.442852 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653ce283d384579a24208b2e4d727c2a') in 0.004335 seconds
-  Import took 0.007300 seconds .
+  Time since last request: 580.646336 seconds.
+  path: Assets/Music/background_song_guitar.wav
+  artifactKey: Guid(20c3225cd18431d419ca1aabf5c426ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/background_song_guitar.wav using Guid(20c3225cd18431d419ca1aabf5c426ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6522db25d418b3c3749e9a8be8bc6e9a') in 0.080206 seconds
+  Import took 0.083366 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001045 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653ce283d384579a24208b2e4d727c2a') in 0.002561 seconds
-  Import took 0.004920 seconds .
+  Time since last request: 0.000464 seconds.
+  path: Assets/Music/zombie_walking_in_grass.aiff
+  artifactKey: Guid(a5b8c91c835c45e47ad901ef02c4989c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/zombie_walking_in_grass.aiff using Guid(a5b8c91c835c45e47ad901ef02c4989c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ce28aa01a412f8e9876602022ddf24') in 0.017722 seconds
+  Import took 0.019970 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.206940 seconds.
-  path: Assets/Models
-  artifactKey: Guid(4151c12b1ddf31e4181b456223a39e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models using Guid(4151c12b1ddf31e4181b456223a39e78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ccfe92a0a0d67ccd955861a9e51d2cb') in 0.005393 seconds
-  Import took 0.008482 seconds .
+  Time since last request: 0.000268 seconds.
+  path: Assets/Music/zombie_breathing.flac
+  artifactKey: Guid(6169ea6302d5e0741be5641de068fcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/zombie_breathing.flac using Guid(6169ea6302d5e0741be5641de068fcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afbb0210e705eb0a29c0c1326e1db480') in 0.012827 seconds
+  Import took 0.014734 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 701.834853 seconds.
-  path: Assets/Models/ruinned_store.fbx
-  artifactKey: Guid(135c364d1c4e59d4e907745ccb65b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/ruinned_store.fbx using Guid(135c364d1c4e59d4e907745ccb65b446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b835721f547ca592b88404b6d8e827') in 0.754013 seconds
-  Import took 0.759578 seconds .
+  Time since last request: 0.000318 seconds.
+  path: Assets/Music/zombie_walking.wav
+  artifactKey: Guid(7bff0736e7ad14f439a6570d285cb220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Music/zombie_walking.wav using Guid(7bff0736e7ad14f439a6570d285cb220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fac4ed42dab812e095e7acddf267e23') in 0.012367 seconds
+  Import took 0.014941 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
