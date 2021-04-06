@@ -14,7 +14,8 @@ public class animationStateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
+        if(Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d") ||
+            Input.GetKey("up") || Input.GetKey("left") || Input.GetKey("right") || Input.GetKey("down"))
             anim.SetBool("isWalking", true);
         else 
             anim.SetBool("isWalking", false);
