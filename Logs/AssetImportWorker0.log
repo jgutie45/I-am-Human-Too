@@ -84,3 +84,27 @@ Received Import Request.
 Start importing Assets/Models/Zombie/zombie.fbx using Guid(5cf2ec239f2eaf741a569ff7ebca525e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2d8be00b4c833b4b6570986656d873') in 0.383058 seconds
   Import took 0.396139 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 15771.626387 seconds.
+  path: Assets/Models/ruinned_store 1.fbx
+  artifactKey: Guid(c4beb7e3c9c162f4c8808e004e418b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/ruinned_store 1.fbx using Guid(c4beb7e3c9c162f4c8808e004e418b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780f547a8e8d8c31331732c803151c4e') in 0.047662 seconds
+  Import took 0.049701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.803938 seconds.
+  path: Assets/Models/ruined_store 1.fbx
+  artifactKey: Guid(c4beb7e3c9c162f4c8808e004e418b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/ruined_store 1.fbx using Guid(c4beb7e3c9c162f4c8808e004e418b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e68fcd6fd51ecfcb248343bf45d192f') in 0.049626 seconds
+  Import took 0.051601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1502.595646 seconds.
+  path: Assets/Old building
+  artifactKey: Guid(6a3eb14b37d2a6446b4170864acbf7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Old building using Guid(6a3eb14b37d2a6446b4170864acbf7e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4d269d65327328955160a9d23814ab') in 0.005294 seconds
+  Import took 0.007132 seconds .
+
