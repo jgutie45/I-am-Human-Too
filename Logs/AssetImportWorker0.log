@@ -1255,4 +1255,40 @@ System memory in use after: 69.6 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1785.
 Total: 2.151000 ms (FindLiveObjects: 0.228100 ms CreateObjectMapping: 0.057500 ms MarkObjects: 1.849000 ms  DeleteObjects: 0.014700 ms)
+=======
+- Completed reload, in  0.793 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1273 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.8 MB.
+System memory in use after: 66.8 MB.
 
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1722.
+Total: 2.995600 ms (FindLiveObjects: 0.647600 ms CreateObjectMapping: 0.136400 ms MarkObjects: 2.089300 ms  DeleteObjects: 0.118200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/NavMeshComponents/Scripts/NavMeshComponents.asmdef
+  artifactKey: Guid(8c4dd21966739024fbd72155091d199e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NavMeshComponents/Scripts/NavMeshComponents.asmdef using Guid(8c4dd21966739024fbd72155091d199e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b5623d416a729ecaaa9fb28fce8682') in 0.024478 seconds
+  Import took 0.027616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000533 seconds.
+  path: Assets/NavMeshComponents/Scripts
+  artifactKey: Guid(ce67aa87f613246dda63a54a59c6399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NavMeshComponents/Scripts using Guid(ce67aa87f613246dda63a54a59c6399e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf6cc29b8569c9dba5c13357ab3fd27a') in 0.007230 seconds
+  Import took 0.010203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001331 seconds.
+  path: Assets/NavMeshComponents/Scripts/NavMeshComponents.asmdef
+  artifactKey: Guid(8c4dd21966739024fbd72155091d199e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NavMeshComponents/Scripts/NavMeshComponents.asmdef using Guid(8c4dd21966739024fbd72155091d199e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b5623d416a729ecaaa9fb28fce8682') in 0.002609 seconds
+  Import took 0.004827 seconds .
