@@ -11,6 +11,9 @@ CS 426 Video Game Group Project
 * AI navigation: By using NavMesh Surface script, set buildings and obstacle as obstacle layer. The script will mesh the obstacle layer objects as none walkable area, so the AI will walk around it instead of walk through it.
 * Nav Mesh Agent script: this script is mainly control the AI speed and acceleration, by associating NavMesh Surface script that identify walkable region for AI.
 * AI field of sight: FieldOfView script detect and filter the objects in certain range and angle. Users can set View Radius and View Angle for different type of AI
+* Added Background Music that will not stop playing due to added code to prevent it from stopping even if the scenes change to set the tone of the city
+* Added sound effect to Zombie, so that user can hear the character.
+* Added buildings and piles of rubble from the asset store to set the scene to be more Post Apocalyptic
 
 ## Reference  
 Third Person Movement and Camera: https://www.youtube.com/watch?v=4HpC--2iowE&t=1026s  
