@@ -4,8 +4,8 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
-Logs/AssetImportWorker0.log
-Logs/AssetImportWorker0-prev.log
+AssetImportWorker0.log
+AssetImportWorker0-prev.log
 
 # Visual Studio cache directory
 .vs/
