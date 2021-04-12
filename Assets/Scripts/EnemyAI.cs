@@ -8,8 +8,10 @@ public class EnemyAI : MonoBehaviour
     public float rotationSpeed = 60f;
     List<Transform> visibleTargets;
     public UnityEngine.AI.NavMeshAgent agent;
-    public Transform player;
+    [HideInInspector]
+    public GameObject player;
     public LayerMask Player;
+    public int damageToPlayer = 1;
 
     // Patrolling
     [HideInInspector]
@@ -26,7 +28,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("Player").transform;
+        player = GameObject.Find("Player");
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
@@ -34,7 +36,6 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         visibleTargets = GetComponent<FieldOfView>().visibleTargets;
-        // patrollingSpot = new Vector3(11f, transform.position.y, 2f);
         patrollingSpot = transform.position;
     }
 
@@ -69,7 +70,7 @@ public class EnemyAI : MonoBehaviour
 
     private void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        agent.SetDestination(player.transform.position);
     }
 
     private void AttackPlayer()
@@ -77,15 +78,17 @@ public class EnemyAI : MonoBehaviour
         // Make sure enemy doesn't move
         agent.SetDestination(transform.position);
         // Approching to player
-        transform.LookAt(player);
+        transform.LookAt(player.transform);
 
         if(!alreadyAttacked) 
         {
             // TODO: knock down the player(zombie)
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            player.GetComponent<PlayerMovement>().TakeDamage(damageToPlayer);
         }
     }
+    
     private void ResetAttack()
     {
         alreadyAttacked = false;

@@ -2,9 +2,9 @@
 CS 426 Video Game Group Project
 
 ## There are 3 type of Human AI:  
-* Regular Human: average sight range, average chasing speed, average turnning speed
-* Survivalist Human: largest sight range, slowest chasing speed, slowest turnning speed
-* Strong Human: shortest sight range, fastest chasing speed, fastest turnning speed
+* Regular Human: Blue signt sector, average sight range, average chasing speed, average turnning speed
+* Survivalist Human: Green signt sector, largest sight range, slowest chasing speed, slowest turnning speed
+* Strong Human: Red signt sector, shortest sight range, fastest chasing speed, fastest turnning speed
 
 ## Detail Implementation:
 * FSM for AI to do the following actions: Patrolling, Chasing, Attacking.
@@ -15,7 +15,11 @@ CS 426 Video Game Group Project
 * Added sound effect to Zombie, so that user can hear the character.
 * Added buildings and piles of rubble from the asset store to set the scene to be more Post Apocalyptic
 
+## UI Design:
+* Added start menu, Player can choose START to start the game, OPTIONS to set up the game, and QUIT to quit the game. 
+* Created a health bar above the player, it visualize the attacking from AI.
+
 ## Reference  
 Third Person Movement and Camera: https://www.youtube.com/watch?v=4HpC--2iowE&t=1026s  
-AI Navigation: https://www.youtube.com/watch?v=UjkSFoLxesw  
+AI Navigation: https://docs.unity3d.com/Manual/class-NavMeshSurface.html  
 Field of Sight: https://www.youtube.com/watch?v=73Dc5JTCmKI
