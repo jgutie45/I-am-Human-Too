@@ -13829,7 +13829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1964025054}
   cam: {fileID: 722971706}
-  speed: 5
+  speed: 6
   turnSmoothTime: 0.1
   force: 40
   jumpSpeed: 8
