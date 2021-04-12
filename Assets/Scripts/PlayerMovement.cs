@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,6 +15,16 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
     private Vector3 moveDirection = Vector3.zero;
+    public int maxHealth = 2;
+    [HideInInspector]
+    public int currentHealth;
+    public HealthBar healthBar;
+    
+    void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
     // Update is called once per frame
     void Update()
@@ -37,5 +48,16 @@ public class PlayerMovement : MonoBehaviour
         }
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
+
+        if(currentHealth == 0)
+        {
+            SceneManager.LoadScene("RestartScene");
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 }

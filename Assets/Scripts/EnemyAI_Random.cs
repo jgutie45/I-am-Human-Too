@@ -6,45 +6,52 @@ using UnityEngine.AI;
 public class EnemyAI_Random : MonoBehaviour
 {
     // Basic
-    public NavMeshAgent agent;
-    public Transform player;
-    public LayerMask whatIsGround, whatIsPlayer;
+    public float rotationSpeed = 60f;
+    List<Transform> visibleTargets;
+    public UnityEngine.AI.NavMeshAgent agent;
+    [HideInInspector]
+    public GameObject player;
+    public LayerMask Player, whatIsGround;
+    public int damageToPlayer = 1;
 
     // Patrolling
+    [HideInInspector]
     public Vector3 walkPoint;
     bool walkPointSet;
     public float walkPointRange;
 
     // Attacking
-    public float timeBetweenAttacks;
+    public float timeBetweenAttacks = 1f;
     bool alreadyAttacked;
 
     // States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+    public float attackRange = 1.25f;
+    bool playerInAttackRange;
     
+    private void Awake()
+    {
+        player = GameObject.Find("Player");
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        visibleTargets = GetComponent<FieldOfView>().visibleTargets;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-        
-        if (!playerInSightRange && !playerInAttackRange) Patrolling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInSightRange && playerInAttackRange) AttackPlayer();
-    }
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, Player);
 
-    private void Awake()
-    {
-        player = GameObject.Find("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
+        // player is not insight nor in attack range
+        if(visibleTargets.Count == 0 && !playerInAttackRange) Patrolling();
+        // player within sight, but not in attack range, should chase player now
+        if(visibleTargets.Count != 0 && !playerInAttackRange) ChasePlayer();
+        // player in sight and in attack range, hit him now
+        if(visibleTargets.Count != 0 && playerInAttackRange) AttackPlayer();
+
     }
 
     private void Patrolling()
@@ -70,7 +77,7 @@ public class EnemyAI_Random : MonoBehaviour
 
     private void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        agent.SetDestination(player.transform.position);
     }
 
     private void AttackPlayer()
@@ -78,15 +85,17 @@ public class EnemyAI_Random : MonoBehaviour
         // Make sure enemy doesn't move
         agent.SetDestination(transform.position);
         // Approching to player
-        transform.LookAt(player);
+        transform.LookAt(player.transform);
 
         if(!alreadyAttacked) 
         {
             // TODO: knock down the player(zombie)
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            player.GetComponent<PlayerMovement>().TakeDamage(damageToPlayer);
         }
     }
+
     private void ResetAttack()
     {
         alreadyAttacked = false;
@@ -95,9 +104,7 @@ public class EnemyAI_Random : MonoBehaviour
     // Editor visualization helper
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
