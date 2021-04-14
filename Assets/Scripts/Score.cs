@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public GameObject scoreText1;
     public Text scoreText;
     public int maxScore = 5;
 
@@ -25,8 +24,7 @@ public class Score : MonoBehaviour
     {
         score++;
         if(score != maxScore){
-                scoreText.text = "COLLECTED: " + score + " out of 5 notes";
-                Destroy(gameObject);
+                 scoreText.text = "COLLECTED: " + score + " out of 5 notes";
             }
             else
             {
