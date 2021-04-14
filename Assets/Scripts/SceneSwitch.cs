@@ -7,6 +7,6 @@ public class SceneSwitch : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(sceneName:"ParkScene");
     }
 }
