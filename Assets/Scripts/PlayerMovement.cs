@@ -16,8 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0F;
     private Vector3 moveDirection = Vector3.zero;
     public int maxHealth = 2;
-    [HideInInspector]
-    public int currentHealth;
+    [HideInInspector] public int currentHealth;
     public HealthBar healthBar;
     
     void Start()
