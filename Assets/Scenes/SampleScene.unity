@@ -1222,6 +1222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 174536377}
+  - component: {fileID: 174536378}
   m_Layer: 7
   m_Name: First Aid Kits Pile
   m_TagString: Untagged
@@ -1245,9 +1246,23 @@ Transform:
   - {fileID: 933468310}
   - {fileID: 905566957}
   - {fileID: 816254244}
+  - {fileID: 584200395}
   m_Father: {fileID: 831360624}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &174536378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174536376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &176498428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3959,11 +3974,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584200394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.2377815, y: -2.034572, z: -1.1978335}
+  m_LocalPosition: {x: 0.46821976, y: -0.038571835, z: -0.3891921}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1707264460}
-  m_Father: {fileID: 831360624}
+  m_Father: {fileID: 174536377}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &587042102 stripped
@@ -5075,7 +5090,6 @@ Transform:
   - {fileID: 993309867}
   - {fileID: 314995924}
   - {fileID: 960738059}
-  - {fileID: 584200395}
   - {fileID: 174536377}
   m_Father: {fileID: 0}
   m_RootOrder: 37
@@ -5284,7 +5298,6 @@ Transform:
   - {fileID: 1481439862}
   - {fileID: 387414248}
   - {fileID: 832895279}
-  - {fileID: 942756991}
   - {fileID: 1019002926}
   - {fileID: 968324813}
   m_Father: {fileID: 0}
@@ -5988,11 +6001,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942756990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.2377815, y: -2.034572, z: -1.1978335}
+  m_LocalPosition: {x: 0.46821928, y: -0.038571835, z: -0.38919258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 332556160}
-  m_Father: {fileID: 837728033}
+  m_Father: {fileID: 1019002926}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &943982304
@@ -6570,7 +6583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ab466c619430a84182c2a188ccd2d5b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ab466c619430a84182c2a188ccd2d5b, type: 3}
       propertyPath: m_LocalScale.y
@@ -7249,6 +7262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1019002926}
+  - component: {fileID: 1019002927}
   m_Layer: 7
   m_Name: First Aid Kits Pile
   m_TagString: Untagged
@@ -7272,9 +7286,23 @@ Transform:
   - {fileID: 1250602566}
   - {fileID: 1694029156}
   - {fileID: 1815846554}
+  - {fileID: 942756991}
   m_Father: {fileID: 837728033}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1019002927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019002925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1031082172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14859,6 +14887,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.03200054
       objectReference: {fileID: 0}
+    - target: {fileID: 3535481703847559696, guid: cded4ecb97b559444a337432c1794386, type: 3}
+      propertyPath: m_Value
+      value: 3.82
+      objectReference: {fileID: 0}
     - target: {fileID: 3535481703847559699, guid: cded4ecb97b559444a337432c1794386, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -14868,8 +14900,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3535481703847559699, guid: cded4ecb97b559444a337432c1794386, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535481703847559699, guid: cded4ecb97b559444a337432c1794386, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535481703847559699, guid: cded4ecb97b559444a337432c1794386, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -6.1858
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535481703847559699, guid: cded4ecb97b559444a337432c1794386, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3535481704519231728, guid: cded4ecb97b559444a337432c1794386, type: 3}
       propertyPath: m_Enabled
@@ -14897,15 +14941,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3535481704519231729, guid: cded4ecb97b559444a337432c1794386, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.23718226
+      value: 0.23718224
       objectReference: {fileID: 0}
     - target: {fileID: 3535481704519231729, guid: cded4ecb97b559444a337432c1794386, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000020817202
+      value: 0.000000041523798
       objectReference: {fileID: 0}
     - target: {fileID: 3535481704519231729, guid: cded4ecb97b559444a337432c1794386, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000050824998
+      value: -0.0000000101379936
       objectReference: {fileID: 0}
     - target: {fileID: 3535481704519231729, guid: cded4ecb97b559444a337432c1794386, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15096,15 +15140,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5460395415293403631, guid: 4f18c95807158cf449763ca6ba27b014, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.24988496
+      value: 0.24988495
       objectReference: {fileID: 0}
     - target: {fileID: 5460395415293403631, guid: 4f18c95807158cf449763ca6ba27b014, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000022343468
+      value: 0.000000012121388
       objectReference: {fileID: 0}
     - target: {fileID: 5460395415293403631, guid: 4f18c95807158cf449763ca6ba27b014, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000005766227
+      value: -0.0000000031281941
       objectReference: {fileID: 0}
     - target: {fileID: 5460395415900002215, guid: 4f18c95807158cf449763ca6ba27b014, type: 3}
       propertyPath: m_LocalRotation.y

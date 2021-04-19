@@ -17,6 +17,6 @@ public class Billboard : MonoBehaviour
         // energy bar canvas always face to main camera
         // this.transform.LookAt(transform.position - camTrans.position);
         this.transform.LookAt(camTrans.position);
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y+180, transform.rotation.eulerAngles.z);
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y+180f, transform.rotation.eulerAngles.z);
     }
 }

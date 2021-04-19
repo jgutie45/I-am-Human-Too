@@ -59,4 +59,16 @@ public class PlayerMovement : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        Debug.Log("On Trigger Enter");
+        if(currentHealth != maxHealth)
+        {
+            Destroy(collider.gameObject);
+            currentHealth = currentHealth + 1;
+            healthBar.SetHealth(currentHealth);
+        }
+        
+    }
 }
