@@ -17,19 +17,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1620817
+      value: 22.638971
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1828835
+      value: -1.2658854
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.20308685
+      value: -26.648857
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9765385
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.21534307
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalRotation.z
@@ -49,7 +49,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -24.871
       objectReference: {fileID: 0}
     - target: {fileID: 5350250791802582098, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8905729947049369207, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
       propertyPath: m_Name
-      value: Tree Variant
+      value: Tree Variant (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e838d2559f57343b4f363db0c3dba8, type: 3}
