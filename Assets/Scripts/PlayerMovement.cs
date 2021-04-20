@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider collider)
     {
         Debug.Log("On Trigger Enter");
-        if(currentHealth != maxHealth)
+        if(currentHealth != maxHealth && collider.gameObject.name == "First Aid Kits Pile")
         {
             Destroy(collider.gameObject);
             currentHealth = currentHealth + 1;
