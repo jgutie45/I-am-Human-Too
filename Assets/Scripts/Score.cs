@@ -19,7 +19,7 @@ public class Score : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void AddPoint(Collider other)
+    public void AddPoint()
     {
         score++;
         if(score != maxScore){
