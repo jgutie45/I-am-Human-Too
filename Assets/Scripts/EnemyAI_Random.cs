@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class EnemyAI_Random : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class EnemyAI_Random : MonoBehaviour
     public GameObject player;
     public LayerMask Player, whatIsGround;
     public int damageToPlayer = 1;
+    public Image DamageImage;
+    private float r, g, b, a;
 
     // Patrolling
     [HideInInspector]
@@ -93,12 +96,25 @@ public class EnemyAI_Random : MonoBehaviour
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
             player.GetComponent<PlayerMovement>().TakeDamage(damageToPlayer);
+            // blood splatter effect
+            r = DamageImage.color.r;
+            g = DamageImage.color.g;
+            b = DamageImage.color.b;
+            Color c = new Color(r, g , b, 0.6f);
+            DamageImage.color = c;
+            InvokeRepeating("showDamageOverlayImage", 1.5f, 0f);
         }
     }
 
     private void ResetAttack()
     {
         alreadyAttacked = false;
+    }
+
+    public void showDamageOverlayImage()
+    {
+        Color c = new Color(r, g , b, 0);
+        DamageImage.color = c;
     }
 
     // Editor visualization helper

@@ -89,7 +89,7 @@ public class EnemyAI : MonoBehaviour
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
             player.GetComponent<PlayerMovement>().TakeDamage(damageToPlayer);
-            // showDamageOverlayImage();
+            // blood splatter effect
             r = DamageImage.color.r;
             g = DamageImage.color.g;
             b = DamageImage.color.b;
