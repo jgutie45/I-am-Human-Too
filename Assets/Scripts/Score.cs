@@ -13,22 +13,21 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        score=0;
+        score = 0;
         scoreText.text = "COLLECTED: " + score + " out of 5 notes"; 
         
     }
 
     // Update is called once per frame
-    public void AddPoint(Collider other)
+    public void AddPoint()
     {
         score++;
         if(score != maxScore){
-                 scoreText.text = "COLLECTED: " + score + " out of 5 notes";
-            }
-            else
-            {
-                scoreText.text = "All Notes Collected!";
-            }            
+            scoreText.text = "COLLECTED: " + score + " out of 5 notes";
         }
+        else
+        {
+            scoreText.text = "All Notes Collected!";
+        }            
+    }
 }
