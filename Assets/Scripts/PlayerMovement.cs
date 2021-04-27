@@ -18,11 +18,16 @@ public class PlayerMovement : MonoBehaviour
     public int maxHealth = 2;
     [HideInInspector] public int currentHealth;
     public HealthBar healthBar;
+    [HideInInspector] public AudioSource music;
+    [HideInInspector] public AudioClip HealSound;
     
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        music = gameObject.AddComponent<AudioSource>(); // added AudioSource component
+        music.playOnAwake = false;  // stop at beginning
+        HealSound = Resources.Load<AudioClip>("Sounds/heal");
     }
 
     // Update is called once per frame
@@ -62,12 +67,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        Debug.Log("On Trigger Enter");
         if(currentHealth != maxHealth && collider.gameObject.name == "First Aid Kits Pile")
         {
+            Debug.Log("Heal");
             Destroy(collider.gameObject);
             currentHealth = currentHealth + 1;
             healthBar.SetHealth(currentHealth);
+            // play sound
+            music.clip = HealSound;
+            music.Play();
         }
         
     }
