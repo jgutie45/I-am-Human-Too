@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
     public Score scoreManager;
  
     //this method is called whenever a collision is detected
-    private void OnCollisionEnter(Collision collision) {
+    private void OnTriggerEnter(Collider collision) {
         //on collision adding point to the score
         scoreManager.AddPoint();
  
