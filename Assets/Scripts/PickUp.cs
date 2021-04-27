@@ -11,6 +11,7 @@ public class PickUp : MonoBehaviour
     {
         GetComponent<BoxCollider>().enabled = false;
         GetComponent<Rigidbody>().useGravity = false;
+        playSound.Play();
         this.transform.position = theDest.position;
         this.transform.parent = GameObject.Find("Destination").transform;
     }
@@ -19,7 +20,6 @@ public class PickUp : MonoBehaviour
     void  OnMouseUp()
     {
         this.transform.parent = null;
-        playSound.Play();
         GetComponent<Rigidbody>().useGravity = true; 
         GetComponent<BoxCollider>().enabled = true;
     }
