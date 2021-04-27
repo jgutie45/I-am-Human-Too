@@ -30,4 +30,11 @@ public class Score : MonoBehaviour
             scoreText.text = "All Notes Collected!";
         }            
     }
+
+    public bool isCollected(){
+        if(score == 5)
+            return true;
+        else
+            return false;
+    }
 }

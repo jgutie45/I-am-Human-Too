@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
+    public Score scoreManager;
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(sceneName:"ParkScene");
+        if(scoreManager.isCollected()){
+            Debug.Log("collected all 5 notes, transition to Park");
+            SceneManager.LoadScene(sceneName:"ParkScene");
+        }
+        else{
+            Debug.Log("did not collect 5 notes!");
+        }
     }
 }
