@@ -5,9 +5,11 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public Score scoreManager;
+    public AudioSource collectSound;
  
     //this method is called whenever a collision is detected
     private void OnTriggerEnter(Collider collision) {
+        collectSound.Play();
         //on collision adding point to the score
         scoreManager.AddPoint();
  
