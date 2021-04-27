@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     public Transform theDest; 
+    public AudioSource playSound;
     // Pick Up With Mouse click
     void OnMouseDown()
     {
@@ -18,6 +19,7 @@ public class PickUp : MonoBehaviour
     void  OnMouseUp()
     {
         this.transform.parent = null;
+        playSound.Play();
         GetComponent<Rigidbody>().useGravity = true; 
         GetComponent<BoxCollider>().enabled = true;
     }
