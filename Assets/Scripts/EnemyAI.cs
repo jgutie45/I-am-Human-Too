@@ -15,10 +15,11 @@ public class EnemyAI : MonoBehaviour
     public int damageToPlayer = 1;
     public Image DamageImage;
     private float r, g, b, a;
+    [HideInInspector] public AudioSource music;
+    [HideInInspector] public AudioClip AttackSound;
 
     // Patrolling
-    [HideInInspector]
-    public Vector3 patrollingSpot;
+    [HideInInspector] public Vector3 patrollingSpot;
     bool atPatrollingSpot;
 
     // Attacking
@@ -33,6 +34,9 @@ public class EnemyAI : MonoBehaviour
     {
         player = GameObject.Find("Player");
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        music = gameObject.AddComponent<AudioSource>(); // added AudioSource component
+        music.playOnAwake = false;  // stop at beginning
+        AttackSound = Resources.Load<AudioClip>("Sounds/attacking");
     }
 
     // Start is called before the first frame update
@@ -85,10 +89,14 @@ public class EnemyAI : MonoBehaviour
 
         if(!alreadyAttacked) 
         {
-            // TODO: knock down the player(zombie)
+            // knock down the player(zombie)
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            // health bar take damage
             player.GetComponent<PlayerMovement>().TakeDamage(damageToPlayer);
+            // sound play
+            music.clip = AttackSound;
+            music.Play();
             // blood splatter effect
             r = DamageImage.color.r;
             g = DamageImage.color.g;
