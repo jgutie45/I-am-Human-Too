@@ -1423,7 +1423,11 @@ MonoBehaviour:
   m_text: 'Congradulations!
 
 
-    You''ve found the cure!'
+    You''ve found the cure!
+
+    It took a few months
+    to regain your human sense. Eventually, you went back to human society, but the
+    world is not completely safe yet.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
